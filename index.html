@@ -19,15 +19,18 @@
 
     <style>
         body {
-            background: linear-gradient(135deg, #111827, #1e293b, #312e81);
+            --r:0;
+            --g:1;
+            --b:75;
+            --a:.9;
+            background-image: linear-gradient(rgba(var(--r), var(--g), var(--b), var(--a)));
             min-height: 100vh;
             color: white;
+            font-weight:bolder;
+            font-size:large;
         }
 
-        .navbar {
-            background: linear-gradient(90deg, #2563eb, #4f46e5);
-            z-index: 1000;
-        }
+        
 
         .display-title {
             font-family: "Black Ops One", cursive;
@@ -195,7 +198,8 @@
 <body>
 
     <script src="js/nav.js"></script>
-
+    <br>
+    <br>
     <!-- ================= HERO ================= -->
     <section class="hero text-center p-5">
         <p class="welcome-note" id="welcome-note">Welcome!</p>

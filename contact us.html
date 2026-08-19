@@ -15,16 +15,18 @@
 
 
     <style>
+        
+
         body {
-            background-image: url("pics/contact us body background.jpeg");
+            --r:49;
+            --g:119;
+            --b:224;
+            --a:0.5;
+            background-image: linear-gradient(rgba(var(--r), var(--g), var(--b), var(--a))), url("pics/contact us body background.jpeg");
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             background-attachment: fixed;
-        }
-
-        .navbar {
-            background: linear-gradient(90deg, #2563eb, #4f46e5);
         }
 
 
@@ -276,13 +278,8 @@
                                     Name
                                 </label>
 
-                                <input type="text" 
-                                id="name" 
-                                name="name"
-                                class="form-control" 
-                                placeholder="Enter your name"
-                                autocomplete="name" 
-                                required>
+                                <input type="text" id="name" name="name" class="form-control"
+                                    placeholder="Enter your name" autocomplete="name" required>
                             </div>
 
 
@@ -293,13 +290,8 @@
                                     Email
                                 </label>
 
-                                <input type="email" 
-                                id="email" 
-                                name="email"
-                                class="form-control" 
-                                placeholder="Enter your email" 
-                                autocomplete="email"
-                                required>
+                                <input type="email" id="email" name="email" class="form-control"
+                                    placeholder="Enter your email" autocomplete="email" required>
 
                             </div>
 
@@ -311,13 +303,8 @@
                                     Phone
                                 </label>
 
-                                <input type="text" 
-                                id="phone" 
-                                name="phone"
-                                class="form-control" 
-                                placeholder="Enter your phone number"
-                                autocomplete="tel"
-                                required>
+                                <input type="text" id="phone" name="phone" class="form-control"
+                                    placeholder="Enter your phone number" autocomplete="tel" required>
 
                             </div>
 
@@ -329,12 +316,8 @@
                                     Message
                                 </label>
 
-                                <textarea id="message" 
-                                name="message"
-                                class="form-control" 
-                                rows="5"
-                                placeholder="Write something here....." 
-                                required></textarea>
+                                <textarea id="message" name="message" class="form-control" rows="5"
+                                    placeholder="Write something here....." required></textarea>
 
                             </div>
 
@@ -383,7 +366,7 @@
                 <div class="col-6 col-md-3">
 
                     <a href="https://www.instagram.com/" target="_blank">
-                          
+
                         <img src="pics/instagram.jpg" class="social-icon img-fluid" alt="Instagram">
 
                     </a>
@@ -419,7 +402,7 @@
 
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-     <!-- Bootstrap JavaScript -->
+    <!-- Bootstrap JavaScript -->
     <script src="js/bootstrap.bundle.min.js"></script>
 
 

@@ -19,15 +19,18 @@
 
     <style>
         body {
-            background: linear-gradient(135deg, #111827, #1e293b, #312e81);
+            --r: 7;
+            --g: 5;
+            --b: 138;
+            --a: .9;
+            background: linear-gradient(rgba(var(--r), var(--g), var(--b), var(--a)));
             min-height: 100vh;
             color: white;
+            font-weight: bolder;
+            font-size: large;
         }
 
-        .navbar {
-            background: linear-gradient(90deg, #2563eb, #4f46e5);
-            z-index: 1000;
-        }
+
 
         .display-title {
             font-family: "Black Ops One", cursive;
@@ -185,7 +188,8 @@
 <body>
 
     <script src="js/nav.js"></script>
-
+    <br>
+    <br>
     <!-- ================= HERO ================= -->
     <section class="hero text-center p-5">
         <h1 class="display-title" style="font-size:clamp(2rem,6vw,3.2rem);">PATCH NOTES &amp; HEADLINES</h1>
@@ -381,7 +385,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/news.js"></script>
- 
+
 </body>
 
 </html>

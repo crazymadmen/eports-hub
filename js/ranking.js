@@ -64,7 +64,7 @@ const rankings = {
                 {
                     rank: 1,
                     team: "Valorant Aces",
-                    logo: "pics/valorantaces.jpg",
+                    logo: "pics/Valorantaces.jpg",
                     prize: "RM 2500"
                 },
                 {
